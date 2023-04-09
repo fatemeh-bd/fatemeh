@@ -1,0 +1,17 @@
+{
+  "name": "Fatemeh",
+  "short_name": "Fatemeh",
+  "description": "Fatemeh project",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "189x58",
+      "type": "image/ico"
+    }
+  ],
+  "theme_color": "#28e98c",
+  "background_color": "#28e98c",
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "orientation": "portrait"
+}
