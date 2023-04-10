@@ -80,7 +80,7 @@ import { appWithTranslation } from "next-i18next";
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://yourdomain.com" />
-        <meta name="twitter:title" content="PWA App" />
+        <meta name="twitter:title" content="fatemeh" />
         <meta name="twitter:description" content="fatemeh baridaryan personal site" />
         <meta
           name="twitter:image"
@@ -88,9 +88,9 @@ import { appWithTranslation } from "next-i18next";
         />
         <meta name="twitter:creator" content="@DavidWShadow" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="PWA App" />
+        <meta property="og:title" content="fatemeh" />
         <meta property="og:description" content="fatemeh baridaryan personal site" />
-        <meta property="og:site_name" content="PWA App" />
+        <meta property="og:site_name" content="fatemeh" />
         <meta property="og:url" content="https://yourdomain.com" />
         <meta
           property="og:image"

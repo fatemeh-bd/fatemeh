@@ -4,9 +4,9 @@
   "description": "Fatemeh project",
   "icons": [
     {
-      "src": "/favicon.ico",
+      "src": "/bd.png",
       "sizes": "189x58",
-      "type": "image/ico"
+      "type": "image/png"
     }
   ],
   "theme_color": "#28e98c",

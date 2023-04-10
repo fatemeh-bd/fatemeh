@@ -23,7 +23,7 @@ export const LandingStyle = styled.main`
   }
 
   .content {
-    .info span,
+    .info  span,
     .introText span {
       color: var(--mainColor);
     }

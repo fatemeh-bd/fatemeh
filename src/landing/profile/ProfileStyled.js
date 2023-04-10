@@ -7,12 +7,12 @@ export const ProfileStyle = styled.div`
 
   .info img {
     width: 230px;
-    height: 190px;
+    height: 200px;
     margin: auto;
     border-radius: var(--md-radius);
     object-fit: cover;
     z-index: -1;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
   }
   p {
     color: var(--whitePen);
