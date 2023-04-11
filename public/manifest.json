@@ -5,13 +5,16 @@
   "icons": [
     {
       "src": "/bd.png",
-      "sizes": "189x58",
-      "type": "image/png"
+      "sizes": "220x220",
+      "type": "image/png",
+      "purpose":"any maskble"
     }
   ],
   "theme_color": "#28e98c",
   "background_color": "#28e98c",
   "start_url": "/?standalone=true",
   "display": "standalone",
+  "scope":"/",
+ 
   "orientation": "portrait"
 }
