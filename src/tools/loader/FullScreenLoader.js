@@ -15,7 +15,7 @@ const FullScreenStyle = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 1000;
 
   .loader {
     width: 100px;
