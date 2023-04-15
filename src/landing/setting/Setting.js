@@ -77,9 +77,9 @@ const Setting = ({ setOpen }) => {
     setOpen(false);
   };
   return (
-    <div className="py-3">
+    <div className="py-3 ">
       <h4>{t("lanquage")} </h4>
-      <div className=" flex items-center mt-2 mb-4 ">
+      <div className="flex items-center mt-2 mb-4 ">
         <div
           className="boxStyle flex items-center cursor-pointer"
           style={{ borderColor: lang === "en" && "var(--mainColor)" }}

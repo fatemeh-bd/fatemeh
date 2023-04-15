@@ -25,11 +25,13 @@ import Projects from "./sections/Projects";
 import ScrollToTop from "react-scroll-to-top";
 import ContactMe from "./sections/ContactMe";
 import useScreenSize from "../hooks/useScreenSize";
+import Burger from "./Burger";
 
 const Landing = () => {
   const size = useScreenSize();
   const [loader, setLoader] = useState(true);
   const dispatch = useDispatch();
+  const [openMenu, setOpenMenu] = useState(false);
   const lang = useSelector((state) => state.stateLang.lng);
   const movie = useSelector((state) => state.stateGlobal);
   const refs = useRef([]);
@@ -158,11 +160,13 @@ const Landing = () => {
           ))}
         </div>
         <div>
-          <MenuIcon
+          {/* <MenuIcon
             className={`boxStyle fixed lg:top-20 top-3 ${
               lang === "fa" ? "lg:left-7 left-5" : "lg:right-7 right-5"
             } cursor-pointer !p-3`}
-          />
+          /> */}
+          <Burger open={openMenu} setOpen={setOpenMenu} handleClick={handleClick}/>
+       
           <div
             className={`navigation boxStyle fixed z-10  ${
               lang === "fa" ? "lg:left-7" : "lg:right-7"

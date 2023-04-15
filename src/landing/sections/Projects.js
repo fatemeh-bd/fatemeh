@@ -10,11 +10,22 @@ import melina2 from "../../../public/Assets/images/melina2.png";
 import melina3 from "../../../public/Assets/images/melina3.png";
 import melina4 from "../../../public/Assets/images/melina4.png";
 import melina5 from "../../../public/Assets/images/melina5.png";
-
+import mel2 from "../../../public/Assets/images/mel2.png";
+import mel3 from "../../../public/Assets/images/mel3.png";
+import mel4 from "../../../public/Assets/images/mel4.png";
+import mel5 from "../../../public/Assets/images/mel5.png";
 import karma from "../../../public/Assets/images/karma.png";
 import panelAdmin from "../../../public/Assets/images/panelAdmin.png";
+import panelAdmin2 from "../../../public/Assets/images/admin2.png";
+import panelAdmin3 from "../../../public/Assets/images/admin3.png";
+
 import mediaPanel from "../../../public/Assets/images/panelMedia.png";
+import mediaPanel2 from "../../../public/Assets/images/media2.png";
+import mediaPanel3 from "../../../public/Assets/images/media3.png";
+
 import customerPanel from "../../../public/Assets/images/customerPanel.png";
+import customerPanel2 from "../../../public/Assets/images/customer2.png";
+
 import bot from "../../../public/Assets/images/asanbot.png";
 import bot2 from "../../../public/Assets/images/asanbot2.png";
 import bot3 from "../../../public/Assets/images/asanbot3.png";
@@ -166,7 +177,17 @@ const Projects = () => {
     progressCircle.current.style.setProperty("--progress", 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
-  const meilnaImages = [melina, melina2, melina3, melina4, melina5];
+  const meilnaImages = [melina, melina2, melina3, melina4, melina5,mel2,mel3,mel4 ,mel5];
+  const panels = [
+    customerPanel,
+    customerPanel2,
+    mediaPanel,
+    mediaPanel2,
+    mediaPanel3,
+    panelAdmin,
+    panelAdmin2,
+    panelAdmin3,
+  ];
 
   const asanbotImages = [bot, bot2, bot3, bot4, bot5, bot6];
   return (
@@ -202,7 +223,7 @@ const Projects = () => {
             >
               {meilnaImages.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <div className="boxStyle project !p-0 lg:h-[30vw] md:h-[45vw] h-[14rem] !p-0 overflow-hidden">
+                  <div className="boxStyle project !p-0 lg:h-[30vw] md:h-[50vw] h-[55vw] !p-0 overflow-hidden">
                     <Image src={item} alt="projectimage" />
                     <div className="flex tools flex-wrap items-center">
                       <div className="boxStyle">next js</div>
@@ -241,7 +262,7 @@ const Projects = () => {
             >
               {asanbotImages.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <div className="boxStyle project !p-0 lg:h-[30vw] md:h-[45vw] h-[14rem] !p-0 overflow-hidden">
+                  <div className="boxStyle project !p-0 lg:h-[30vw] md:h-[50vw] h-[55vw] !p-0 overflow-hidden">
                     <Image src={item} alt="projectimage" />
                     <div className="flex tools flex-wrap items-center">
                       <div className="boxStyle">Next js</div>
@@ -265,7 +286,7 @@ const Projects = () => {
           className="lg:!w-1/2  !w-full lg:mx-3 "
           component={
             <>
-              <div className="boxStyle project !p-0 overflow-hidden lg:h-72 md:h-[45vw] h-[14rem] ">
+              <div className="boxStyle project !p-0 overflow-hidden lg:h-64 md:h-[50vw] h-[55vw] ">
                 <Image src={plof} alt="projectimage" />
                 <div className="flex tools flex-wrap items-center">
                   <div className="boxStyle !mb-1">next js</div>
@@ -286,7 +307,7 @@ const Projects = () => {
           className="lg:!w-1/2 !w-full"
           component={
             <>
-              <div className="boxStyle project !p-0 overflow-hidden lg:h-72 md:h-[45vw] h-[14rem]">
+              <div className="boxStyle project !p-0 overflow-hidden lg:h-64 md:h-[50vw] h-[55vw]">
                 <Image src={karma} alt="projectimage" />
                 <div className="flex tools flex-wrap items-center">
                   <div className="boxStyle">next js</div>
@@ -316,36 +337,18 @@ const Projects = () => {
         modules={[EffectFade, Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="boxStyle project !p-0  lg:h-[30vw] md:h-[45vw] h-[14rem] !p-0 overflow-hidden  ">
-            <Image src={mediaPanel} alt="projectimage" />
-            <div className="flex tools flex-wrap items-center">
-              <div className="boxStyle">next js</div>
-              <div className="boxStyle">redux </div>
-              <div className="boxStyle">mui </div>
+        {panels.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="boxStyle project !p-0  lg:h-[30vw] md:h-[50vw] h-[55vw] !p-0 overflow-hidden  ">
+              <Image src={item} alt="projectimage" />
+              <div className="flex tools flex-wrap items-center">
+                <div className="boxStyle">next js</div>
+                <div className="boxStyle">redux </div>
+                <div className="boxStyle">mui </div>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="boxStyle project !p-0 lg:h-[30vw] md:h-[45vw] h-[14rem] !p-0 overflow-hidden  ">
-            <Image src={customerPanel} alt="projectimage" />
-            <div className="flex tools flex-wrap items-center">
-              <div className="boxStyle">next js</div>
-              <div className="boxStyle">redux </div>
-              <div className="boxStyle">mui </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="boxStyle project !p-0 lg:h-[30vw] md:h-[45vw] h-[14rem] !p-0 overflow-hidden  ">
-            <Image src={panelAdmin} alt="projectimage" />
-            <div className="flex tools flex-wrap items-center">
-              <div className="boxStyle">next js</div>
-              <div className="boxStyle">redux </div>
-              <div className="boxStyle">mui </div>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
             <circle cx="24" cy="24" r="20"></circle>

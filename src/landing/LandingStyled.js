@@ -21,7 +21,26 @@ export const LandingStyle = styled.main`
     z-index: -1;
     opacity: var(--lowOpacity);
   }
-
+  .socials a {
+    margin: 0 0.3rem;
+    border: var(--mainBorder);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :hover {
+      border-color: var(--mainColor);
+      svg path {
+        stroke: var(--mainColor);
+      }
+    }
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
   .content {
     .info  span,
     .introText span {

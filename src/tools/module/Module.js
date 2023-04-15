@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ModuleStyle } from "./ModuleStyled";
 import { useSelector } from "react-redux";
 import { CloseIcon } from "../../svg";
@@ -26,7 +26,12 @@ const Module = ({
       }
     }
   };
+  const [load, setLoad] = useState(false);
+  useEffect(() => {
+    setLoad(true);
+  }, []);
   return (
+    load&&
     <ModuleStyle size={size} lang={lang}>
       <div
         className={` ${

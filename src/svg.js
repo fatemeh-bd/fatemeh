@@ -84,7 +84,7 @@ export const WhatsAppIcon = () => {
     </svg>
   );
 };
-export const GmailIcon = ({className}) => {
+export const GmailIcon = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -92,8 +92,7 @@ export const GmailIcon = ({className}) => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className={`${className?className:
-      ""} w-5 h-5`}
+      className={`${className ? className : ""} w-5 h-5`}
     >
       <path
         strokeLinecap="round"
@@ -262,7 +261,7 @@ export const ListIcon = ({ className }) => {
   );
 };
 
-export const ProjectIcon = ({className}) => {
+export const ProjectIcon = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +269,7 @@ export const ProjectIcon = ({className}) => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className={`${className?className:""} w-5 h-5`}
+      className={`${className ? className : ""} w-5 h-5`}
     >
       <path
         strokeLinecap="round"
@@ -320,7 +319,7 @@ export const MenuIcon = ({ className }) => {
   );
 };
 
-export const CloseIcon = ({ onClick }) => {
+export const CloseIcon = ({ onClick, className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -328,7 +327,7 @@ export const CloseIcon = ({ onClick }) => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className={`w-6 h-6 ${className ? className : ""}`}
       onClick={onClick}
     >
       <path

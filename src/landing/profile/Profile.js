@@ -27,6 +27,7 @@ import { useRouter } from "next/router";
 import { leftDir, rightDir } from "../../tools/ChangeRoots";
 import { convertDate } from "../../tools/helper";
 import useLocalStorage from "../../hooks/useLocalStorage";
+import Socials from "./Socials";
 if (typeof window !== "undefined") {
   var root = document.documentElement;
 }
@@ -136,20 +137,7 @@ const Profile = () => {
         <span className="text-sm my-4 block ">
           {t("lastUpdate")} {convertDate("2023/3/5", lang)}
         </span>
-        <div className="flex socials items-center justify-center my-7 ">
-          <Link href={"https://instagram.com/_._fateemeh?igshid=YmMyMTA2M2Y="}>
-            <InstagramIcon />
-          </Link>
-          <Link href={"https://t.me/fateemeh_bd"}>
-            <TelegramIcon />
-          </Link>
-          <Link href={"https://github.com/fatemeh-bd"}>
-            <GithubIcon />
-          </Link>
-          <Link href={"https://wa.me/9901433445"}>
-            <WhatsAppIcon />
-          </Link>
-        </div>
+      <Socials/>
       </div>
       <Link
         href={"mailto:baridaryan@gmail.com"}

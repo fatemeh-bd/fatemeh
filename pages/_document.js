@@ -1,25 +1,23 @@
-import Document, {Html, Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import { ServerStyleSheet } from "styled-components";
 
 const DocumentPage = () => {
-  return(
+  return (
     <Html lang="en">
-  <Head>
-
-    <link rel='manifest' href='/manifest.json'/>
-    <meta name="theme-color" content='#28e98c'/>
-    <link rel='apple-touch-icon' href='../public/bd.png'/>
-
-  </Head>
+      <Head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#28e98c" />
+        <link rel="apple-touch-icon" href="../public/bd.png" />
+      </Head>
       <body>
-        <Main/>
-        <NextScript/>
+        <Main />
+        <NextScript />
       </body>
     </Html>
-    )
-  }
-export default DocumentPage  
-export  class MyDocument extends Document {
+  );
+};
+export default DocumentPage;
+export class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
@@ -46,7 +44,3 @@ export  class MyDocument extends Document {
     }
   }
 }
-
-
-
-
