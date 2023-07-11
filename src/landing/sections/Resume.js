@@ -28,7 +28,7 @@ const Resume = () => {
           </>
         }
       />
-      <a href={"/Assets/images/baridaryanResume.pdf"} download>
+      <a href={"/Assets/images/baridaryan_resume.pdf"} download>
         <SecondlyButton text={t("downloadCV")} icon={<DownloadIcon />} />
       </a>
     </section>

@@ -224,7 +224,7 @@ const Projects = () => {
               {meilnaImages.map((item, index) => (
                 <SwiperSlide key={index}>
                   <div className="boxStyle project !p-0 lg:h-[30vw] md:h-[50vw] h-[55vw] !p-0 overflow-hidden">
-                    <Image src={item} alt="projectimage" />
+                    <Image placeholder="blur" src={item} alt="projectimage" />
                     <div className="flex tools flex-wrap items-center">
                       <div className="boxStyle">next js</div>
                       <div className="boxStyle">redux </div>
@@ -263,7 +263,7 @@ const Projects = () => {
               {asanbotImages.map((item, index) => (
                 <SwiperSlide key={index}>
                   <div className="boxStyle project !p-0 lg:h-[30vw] md:h-[50vw] h-[55vw] !p-0 overflow-hidden">
-                    <Image src={item} alt="projectimage" />
+                    <Image placeholder="blur" src={item} alt="projectimage" />
                     <div className="flex tools flex-wrap items-center">
                       <div className="boxStyle">Next js</div>
                       <div className="boxStyle">Google Chart </div>
@@ -287,7 +287,7 @@ const Projects = () => {
           component={
             <>
               <div className="boxStyle project !p-0 overflow-hidden lg:h-64 md:h-[50vw] h-[55vw] ">
-                <Image src={plof} alt="projectimage" />
+                <Image placeholder="blur"  src={plof} alt="projectimage" />
                 <div className="flex tools flex-wrap items-center">
                   <div className="boxStyle !mb-1">next js</div>
                   <div className="boxStyle !mb-1">redux </div>
@@ -308,7 +308,7 @@ const Projects = () => {
           component={
             <>
               <div className="boxStyle project !p-0 overflow-hidden lg:h-64 md:h-[50vw] h-[55vw]">
-                <Image src={karma} alt="projectimage" />
+                <Image placeholder="blur" src={karma} alt="projectimage" />
                 <div className="flex tools flex-wrap items-center">
                   <div className="boxStyle">next js</div>
                   <div className="boxStyle">redux </div>
@@ -340,7 +340,7 @@ const Projects = () => {
         {panels.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="boxStyle project !p-0  lg:h-[30vw] md:h-[50vw] h-[55vw] !p-0 overflow-hidden  ">
-              <Image src={item} alt="projectimage" />
+              <Image placeholder="blur"  src={item} alt="projectimage" />
               <div className="flex tools flex-wrap items-center">
                 <div className="boxStyle">next js</div>
                 <div className="boxStyle">redux </div>

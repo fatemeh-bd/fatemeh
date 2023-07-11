@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import {
   GithubIcon,
-  GmailIcon,
+  PhoneIcon,
   InstagramIcon,
   LangIcon,
   Logo,
@@ -146,7 +146,7 @@ const Profile = () => {
       >
         <MainButton
           text={t("hireMe")}
-          icon={<GmailIcon />}
+          icon={<PhoneIcon />}
           className="uppercase"
         />
       </Link>

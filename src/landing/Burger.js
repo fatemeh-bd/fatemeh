@@ -13,6 +13,7 @@ import {
   UserIcon,
 } from "../svg";
 import Socials from "./profile/Socials";
+import { useSelector } from "react-redux";
 export const StyledBurger = styled.button`
   display: flex;
   flex-direction: column;
@@ -80,13 +81,14 @@ const Burger = ({ open, setOpen, handleClick }) => {
       icon: GmailIcon,
     },
   ];
+  let lang=useSelector(state=>state.stateLang.lng)
   return (
     <>
       <StyledBurger
         aria-label="Toggle menu"
         open={open}
         onClick={() => setOpen(!open)}
-        className={`boxStyle fixed lg:top-20 top-3 ${"lg:right-7 right-5"} cursor-pointer`}
+        className={`boxStyle fixed lg:top-20 top-3 ${lang==="en"?"lg:right-7 right-5":"lg:left-7 left-5"} cursor-pointer`}
       >
         <span />
         {/* <span /> */}
