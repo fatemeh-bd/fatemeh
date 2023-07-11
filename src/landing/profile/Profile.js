@@ -140,7 +140,7 @@ const Profile = () => {
       <Socials/>
       </div>
       <Link
-        href={"mailto:baridaryan@gmail.com"}
+        href={"tel:09901433445"}
         target="_blank"
         className="w-full"
       >
