@@ -135,7 +135,7 @@ const Profile = () => {
         {/* <p className="text-2xl  mt-9 ">دکمه ارسال پیام رو بزن و باهام ارتباط برقرار کن :)</p> */}
         
         <span className="text-sm my-4 block ">
-          {t("lastUpdate")} {convertDate("2023/3/5", lang)}
+          {t("lastUpdate")} {convertDate("2023/6/20", lang)}
         </span>
       <Socials/>
       </div>
@@ -147,7 +147,8 @@ const Profile = () => {
         <MainButton
           text={t("hireMe")}
           icon={<PhoneIcon />}
-          className="uppercase"
+          className={`uppercase ${lang==="fa"?'flex-row-reverse':""} `}
+          
         />
       </Link>
       <Module

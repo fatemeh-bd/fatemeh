@@ -63,11 +63,11 @@ const MySkills = () => {
       <div className="flex  justify-between flex-wrap">
         <FadeXleft
           delay={0.3}
-          component={<ToolBox Logo={NextJsIcon} percent={80} text="Next js" />}
+          component={<ToolBox Logo={NextJsIcon} percent={70} text="Next js" />}
         />
         <FadeXleft
           component={
-            <ToolBox Logo={ReactJsIcon} text="React js" percent={80} />
+            <ToolBox Logo={ReactJsIcon} text="React js" percent={65} />
           }
         />
         <FadeX
@@ -82,7 +82,7 @@ const MySkills = () => {
         <FadeXleft
           delay={0.3}
           component={
-            <ToolBox Logo={TailwindIcon} text="Tailwind css" percent={40} />
+            <ToolBox Logo={TailwindIcon} text="Tailwind css" percent={70} />
           }
         />
         <FadeXleft

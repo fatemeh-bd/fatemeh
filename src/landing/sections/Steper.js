@@ -57,8 +57,8 @@ export default function Steper() {
             }`}
           >
             <span className="text-base">
-              {toPersianNum(convertDate("2023", lang).split("/")[0], lang)} -{" "}
-              {t("present")}
+              {toPersianNum(convertDate("2022/12/2", lang).split("/")[0], lang)} - {toPersianNum(convertDate("2023/12/12", lang).split("/")[0], lang)}
+       
             </span>
             <h4 className="lg:text-2xl text-xl">{t("frontEndDev")}</h4>
             <p className="pb-4 text-sm">{t("plofPlatform")}</p>
@@ -73,8 +73,8 @@ export default function Steper() {
             }`}
           >
             <span className="text-base">
-              {toPersianNum(convertDate("2021", lang).split("/")[0], lang)} -{" "}
-              {toPersianNum(convertDate("2022", lang).split("/")[0], lang)}
+              {toPersianNum(convertDate("2021/12/2", lang).split("/")[0], lang)} -{" "}
+              {toPersianNum(convertDate("2022/12/2", lang).split("/")[0], lang)}
             </span>
             <h4 className="lg:text-2xl text-xl">{t("frontEndDev")}</h4>
             <p className="pb-4 text-sm">{t("karmaCompany")}</p>
@@ -91,8 +91,8 @@ export default function Steper() {
             }`}
           >
             <span className="text-base">
-              {toPersianNum(convertDate("2020", lang).split("/")[0], lang)} -{" "}
-              {toPersianNum(convertDate("2022", lang).split("/")[0], lang)}
+              {toPersianNum(convertDate("2020/2/2", lang).split("/")[0], lang)} -{" "}
+              {toPersianNum(convertDate("2022/2/2", lang).split("/")[0], lang)}
             </span>
             <h4 className="lg:text-2xl text-xl">{t("karajUni")}</h4>
             <p className="pb-4 text-sm">
