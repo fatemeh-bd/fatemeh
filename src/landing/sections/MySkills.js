@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import {
   ApiIcon,
   BootStrapIcon,
-  CSSIcon,
+
   HtmlCssIcon,
   HtmlIcon,
   JavaScriptIcon,
