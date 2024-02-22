@@ -15,7 +15,7 @@ import {
 } from "../../svg";
 import MainButton from "../../tools/buttons/MainButton";
 import logo from "../../../public/Assets/images/logo.svg";
-import myProfile from "../../../public/Assets/images/fatemeh.jpeg";
+import myProfile from "../../../public/Assets/images/me.jpeg";
 import { ProfileStyle } from "./ProfileStyled";
 import Module from "../../tools/module/Module";
 import Setting from "../setting/Setting";
@@ -135,7 +135,7 @@ const Profile = () => {
         {/* <p className="text-2xl  mt-9 ">دکمه ارسال پیام رو بزن و باهام ارتباط برقرار کن :)</p> */}
         
         <span className="text-sm my-4 block ">
-          {t("lastUpdate")} {convertDate("2023/6/20", lang)}
+          {t("lastUpdate")} {convertDate("2024/2/22", lang)}
         </span>
       <Socials/>
       </div>

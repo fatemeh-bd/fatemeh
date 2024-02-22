@@ -6,8 +6,8 @@ export const ProfileStyle = styled.div`
   padding: 2rem 1.5rem;
 
   .info img {
-    width: 230px;
-    height: 200px;
+    width: 260px;
+    height: 240px;
     margin: auto;
     border-radius: var(--md-radius);
     object-fit: cover;
