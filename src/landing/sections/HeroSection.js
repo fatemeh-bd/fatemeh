@@ -63,11 +63,11 @@ const size=useScreenSize()
 
       <div className="info flex my-20">
         <div>
-          <span className="lg:text-7xl text-5xl">{toPersianNum(2, lang)}+</span>
+          <span className="lg:text-7xl text-5xl">{toPersianNum(3, lang)}+</span>
           <p className="text-sm w-20">{t("yearsOfExperience")}</p>
         </div>
         <div className="lg:mx-40 mx-10">
-          <span className="lg:text-7xl text-5xl">{toPersianNum(6, lang)}+</span>
+          <span className="lg:text-7xl text-5xl">{toPersianNum(8, lang)}+</span>
           <p className="text-sm w-20">{t("projectsCompleted")}</p>
         </div>
       </div>

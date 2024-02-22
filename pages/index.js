@@ -2,10 +2,25 @@ import Head from "next/head";
 import Landing from "../src/landing/Landing";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-
+import { useEffect } from "react";
 
 export default function Home() {
   const { t } = useTranslation();
+  useEffect(() => {
+    fetch('https://dummyjson.com/auth/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        
+        username: 'kminchelle',
+        password: '0lelplR',
+        // expiresInMins: 60, // optional
+      })
+    })
+    .then(res => res.json())
+    .then(console.log);
+    
+  }, []);
   return (
     <>
       <Head>
@@ -16,7 +31,6 @@ export default function Home() {
       </Head>
 
       <Landing />
-
     </>
   );
 }

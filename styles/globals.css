@@ -1,6 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 :root {
   --darkColor: #1f1f1f;
   --backColor: #1f1f1f;
@@ -69,7 +69,6 @@
   padding: 0;
   margin: 0;
   transition-duration: 0.1s;
-
 }
 /* html,
 body {
@@ -123,4 +122,3 @@ button {
 .myMainColor {
   background-color: #28e98c;
 }
-

@@ -82,12 +82,12 @@ const MySkills = () => {
         <FadeXleft
           delay={0.3}
           component={
-            <ToolBox Logo={TailwindIcon} text="Tailwind css" percent={70} />
+            <ToolBox Logo={TailwindIcon} text="Tailwind css" percent={90} />
           }
         />
         <FadeXleft
           component={
-            <ToolBox Logo={BootStrapIcon} text="Bootstarp" percent={70} />
+            <ToolBox Logo={BootStrapIcon} text="Bootstarp" percent={80} />
           }
         />
         <FadeX

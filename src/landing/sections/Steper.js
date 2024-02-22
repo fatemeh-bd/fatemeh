@@ -49,17 +49,21 @@ export default function Steper() {
 
   return (
     <StepStyle className=" my-10" lang={lang}>
+    
       <FadeX
         component={
+
           <div
             className={`lg:px-14 ${
               lang === "fa" ? "pl-0 pr-8 " : "pr-0 pl-8 "
             }`}
           >
             <span className="text-base">
-              {toPersianNum(convertDate("2022/12/2", lang).split("/")[0], lang)} - {toPersianNum(convertDate("2023/12/12", lang).split("/")[0], lang)}
+              {toPersianNum(convertDate("2022/12/2", lang).split("/")[0], lang)} - {toPersianNum(convertDate("2024/3/19", lang).split("/")[0], lang)}
        
             </span>
+            <h4 className="lg:text-2xl text-xl">{t("frontEndDev")}</h4>
+            <p className="pb-4 text-sm">{t("ziber")}</p>
             <h4 className="lg:text-2xl text-xl">{t("frontEndDev")}</h4>
             <p className="pb-4 text-sm">{t("plofPlatform")}</p>
           </div>

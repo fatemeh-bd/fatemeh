@@ -65,10 +65,11 @@
   "yourFullName": "نام کامل شما  ",
   "yourEmailAddress": "آدرس ایمیل شما",
   "optional": "( اختیاری )",
-  "yourPhoneNumber":"شماره تلفن شما",
-  "phone":"شماره تلفن",
+  "yourPhoneNumber": "شماره تلفن شما",
+  "phone": "شماره تلفن",
   "message": "پیام",
   "yourMessage": "متن پیام خود را وارد کنید",
-  "send":"ارسال"
-  
+  "send": "ارسال",
+  "ziber": "زیبر",
+  "resume": "رزومه من"
 }
